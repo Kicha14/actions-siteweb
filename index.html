@@ -1,11 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Audi Groupe B – Projet Web</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+        }
+        header {
+            background: linear-gradient(135deg, #111827, #1f2937);
+            padding: 40px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+        h1 { margin: 0; font-size: 2.8rem; }
+        h2 { color: #58a6ff; margin-top: 40px; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .card {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid #30363d;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        .stats { display: flex; gap: 20px; margin-top: 10px; }
+        .stat {
+            flex: 1;
+            background: #0d1117;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #30363d;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 1.8rem;
+            color: #fbbf24;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #8b949e;
+        }
+        ul { margin-left: 20px; }
+        img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Audi & le Groupe B</h1>
+    <p>Mini‑site réalisé dans le cadre du projet GitHub Actions / Nginx</p>
+</header>
+
 <div class="container">
+
+    <!-- PHOTO -->
     <div class="card">
         <h2>Audi Quattro – Groupe B</h2>
-        <img src="https://www.4legend.com/wp-content/uploads/2020/06/audi-quattro-en-rallye-1981-1987-027.jpg" 
-             alt="Audi Quattro Groupe B" 
-             style="width:100%; border-radius:12px; margin-top:15px;">
+        <img src="https://www.4legend.com/wp-content/uploads/2020/06/audi-quattro-en-rallye-1981-1987-027.jpg"
+             alt="Audi Quattro Groupe B">
         <p style="margin-top:10px;">
-            La mythique Audi Quattro en pleine action dans les années 80, symbole de puissance et de maîtrise.
+            La mythique Audi Quattro en pleine action dans les années 80, symbole de puissance, de maîtrise et de révolution technologique.
         </p>
     </div>
+
+    <!-- PRESENTATION -->
+    <div class="card">
+        <h2>Présentation</h2>
+        <p>
+            Le Groupe B représente l’époque la plus extrême du rallye automobile. Audi y a marqué l’histoire
+            grâce à sa technologie <strong>Quattro</strong> et ses voitures légendaires comme la Sport Quattro S1.
+        </p>
+    </div>
+
+    <!-- MODELES -->
+    <div class="card">
+        <h2>Les modèles emblématiques</h2>
+        <ul>
+            <li><strong>Audi Quattro A1 / A2</strong> – Les débuts de la transmission intégrale en rallye.</li>
+            <li><strong>Audi Sport Quattro</strong> – Empattement raccourci, matériaux composites.</li>
+            <li><strong>Audi Sport Quattro S1</strong> – Plus de 500 ch, aérodynamique extrême.</li>
+        </ul>
+    </div>
+
+    <!-- CHIFFRES -->
+    <div class="card">
+        <h2>Chiffres clés</h2>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">+500 ch</div>
+                <p>Puissance maximale</p>
+            </div>
+            <div class="stat">
+                <div class="stat-value">3 s</div>
+                <p>0 à 100 km/h</p>
+            </div>
+            <div class="stat">
+                <div class="stat-value">1986</div>
+                <p>Fin du Groupe B</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TECHNO -->
+    <div class="card">
+        <h2>Avancées technologiques d’Audi</h2>
+        <p>Audi a révolutionné le rallye et l’automobile grâce à plusieurs innovations majeures :</p>
+        <ul>
+            <li><strong>Transmission intégrale Quattro</strong> : une adhérence inégalée sur toutes surfaces.</li>
+            <li><strong>Moteur 5 cylindres turbo</strong> : un son unique et une puissance explosive.</li>
+            <li><strong>Matériaux composites</strong> : carrosseries plus légères et plus rigides.</li>
+            <li><strong>Aérodynamique avancée</strong> : ailerons massifs, appuis extrêmes sur la S1.</li>
+            <li><strong>Gestion électronique moteur</strong> : précision et fiabilité accrues.</li>
+        </ul>
+    </div>
+
+    <!-- PALMARES -->
+    <div class="card">
+        <h2>Palmarès d’Audi en rallye</h2>
+        <p>Dans les années 80, Audi a dominé le rallye mondial :</p>
+        <ul>
+            <li><strong>2 titres constructeurs WRC</strong> (1982, 1984)</li>
+            <li><strong>2 titres pilotes</strong> (Hannu Mikkola 1983, Stig Blomqvist 1984)</li>
+            <li><strong>23 victoires en rallye WRC</strong> avec les différentes Quattro</li>
+            <li><strong>Première victoire d’une voiture 4 roues motrices</strong> en WRC</li>
+            <li><strong>Domination sur neige et surfaces glissantes</strong> grâce au système Quattro</li>
+        </ul>
+        <p>Audi a laissé une empreinte indélébile dans l’histoire du rallye.</p>
+    </div>
+
 </div>
+
+<footer>
+</footer>
+
+</body>
+</html>
