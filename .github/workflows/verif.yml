@@ -1,0 +1,22 @@
+name: Vérification HTML
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  verif-html:
+    runs-on: self-hosted
+
+    steps:
+      - name: Récupération du dépôt
+        uses: actions/checkout@v4
+
+      - name: Vérifier que index.html existe
+        run: |
+          if [ -f "index.html" ]; then
+            echo "index.html trouvé"
+          else
+            echo "index.html manquant"
+            exit 1
+          fi
